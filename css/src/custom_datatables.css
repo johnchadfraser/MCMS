@@ -1,0 +1,267 @@
+/* Custom datatables */
+
+table#mainTable {
+float:left;
+padding:0px;
+width:100%;
+border-spacing:0px;
+margin:0px;
+color:#666666;
+}
+
+table#mainTable td {
+padding:8px;
+}
+
+table#mainTable th{
+font-size:14px;
+padding:5px 8px 5px 8px;
+font-weight:bold;
+text-align:left;
+}
+
+table#mainTableAlt {
+float:clear;
+padding:10px;
+width:100%;
+border-spacing:0px;
+color:#666666;
+}
+
+table#mainTableAlt td {
+padding:5px;
+}
+
+table#mainTableAlt th {
+padding:5px;
+font-weight:bold;
+border-bottom:solid 1px #CCCCCC;
+text-align:left;
+}
+
+table#mainTableAlt a {
+text-decoration:none;
+}
+
+
+.dataTables_rc, #data2_rc, #data3_rc {
+display:none;
+}
+
+.dataTables_length {
+display:none;
+float:left !important;
+position:fixed !important;
+width:33%;
+height:35px;
+top:200px;
+left:520px !important;
+z-index:1000;
+padding:5px 10px !important;
+margin-top:3px;
+font-weight:normal !important;
+font-size:11px !important;
+background-color:#FFF;
+}
+
+.dataTables_length select {
+border-radius:3px;
+border:#c0c0c0 solid 1px;
+padding:3px;
+font-weight:normal;
+}
+
+.dataTables_filter {
+display:none;
+float:left !important;
+position:fixed;
+top:200px;
+width:33%;
+height:35px;
+z-index:1000;
+padding:5px 10px !important;
+margin-top:3px;
+text-align:left !important;	
+font-size:11px !important;
+background-color:#FFF;
+}
+
+.dataTables_filter input {
+border-radius:3px;
+border:#c0c0c0 solid 1px;
+padding:3px;
+font-weight:normal;
+}
+
+.dataTables_info {
+display:none;
+float:left !important;
+position:fixed;
+top:200px;
+left:675px;
+width:100%;
+height:35px;
+z-index:1000;
+padding:9px 10px !important;
+margin-top:3px;
+font-size:11px !important;
+font-weight:bold;
+background-color:#FFF;
+}
+
+.dataTables_paginate {
+display:none;
+position:fixed;
+z-index:1001;
+width:200px;
+height:41px;
+right:5px;
+bottom:10px;
+padding:10px !important;
+font-weight:bold;
+}
+
+/* Override pagination button styles */
+.paginate_button {
+	all:unset !important;
+	font-size:11px !important;
+	padding:5px !important;
+	cursor:pointer !important;
+}
+
+/* Override pagination button "next" */
+.dataTables_paginate .paginate_button.next.disabled {
+	color:#666 !important;
+}
+
+/* Override pagination button "previous" */
+.dataTables_paginate .paginate_button.previous.disabled {
+	color:#666 !important;
+}
+
+/* Override pagination button "current" */
+.dataTables_paginate .paginate_button.current {
+	color:#ff9900 !important;
+}
+
+/* Override pagination button "hover" */
+.dataTables_paginate .paginate_button:hover {
+	color:#ff9900 !important;
+}
+
+.dataTables_next:hover {
+	color:#ff9900 !important;
+}
+
+div.dt-buttons {
+display:none;
+position:fixed;
+top:120px;
+right:20px;
+float:right !important;
+padding:0px 0px !important;
+z-index:1001;
+}
+
+/* Style the datatable buttons. */
+
+a.dt-button {
+	all:unset !important;
+}
+
+/* Replace datatable excel button with icon. */
+a.buttons-excel  {
+	content:url(/MCMS/assets/icon/excel.png ) !important;
+	padding:0px 5px !important;
+}
+
+a.buttons-excel span {
+	display:none !important;
+}
+
+a.buttons-excel:after {
+	display:block !important;	
+}
+
+/* Replace datatable csv button with icon. */
+a.buttons-csv  {
+	content:url(/MCMS/assets/icon/csv.png ) !important;
+	padding:0px 5px !important;
+}
+
+a.buttons-csv span {
+	display:none !important;
+}
+
+a.buttons-csv:after {
+	display:block !important;	
+}
+
+/* Replace datatable pdf button with icon. */
+a.buttons-pdf  {
+	content:url(/MCMS/assets/icon/pdf.png ) !important;
+	padding:0px 5px !important;
+}
+
+a.buttons-pdf span {
+	display:none !important;
+}
+
+a.buttons-pdf:after {
+	display:block !important;	
+}
+
+/* Replace datatable copy button with icon. */
+a.buttons-copy  {
+	content:url(/MCMS/assets/icon/copy.png ) !important;
+	padding:0px 5px !important;
+}
+
+a.buttons-copy span {
+	display:none !important;
+}
+
+a.buttons-copy:after {
+	display:block !important;	
+}
+
+/* Replace datatable print button with icon. */
+a.buttons-print  {
+	content:url(/MCMS/assets/icon/print.png) !important;
+	padding:0px 5px !important;
+}
+
+a.buttons-print span {
+	display:none !important;
+}
+
+a.buttons-print:after {
+	display:block !important;	
+}
+
+a.buttons-update span {
+	display:none !important;
+}
+
+a.buttons-update:after {
+	display:block !important;	
+}
+
+table.datatable tr.odd { 
+background-color:#E4E4E4;
+}
+
+table.datatable tr.even {
+background-color: white;
+}
+
+table.tablesorter thead tr .header {
+	background-color:#FFF !important;
+	
+}
+
+table.tablesorter thead td {
+	background-color:#FFF !important;
+	border-bottom:solid 1px #CCCCCC;
+	
+}

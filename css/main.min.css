@@ -1,0 +1,208 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url(/MCMS/css/font/open_sans/OpenSans-Regular.woff);
+}
+
+@font-face {
+    font-family: 'Open Sans Semi Bold';
+    src: url(/MCMS/css/font/open_sans/OpenSans-Semibold.woff);
+}
+
+@font-face {
+    font-family: 'Open Sans Semi Bold Italic';
+    src: url(/MCMS/css/font/open_sans/OpenSans-SemiboldItalic.woff);
+}
+
+@font-face {
+    font-family: 'Open Sans Bold';
+    src: url(/MCMS/css/font/open_sans/OpenSans-Bold.woff);
+}
+
+@font-face {
+    font-family: 'Open Sans Bold Italic';
+    src: url(/MCMS/css/font/open_sans/OpenSans-BoldItalic.woff);
+}
+
+html {
+position: relative;
+min-height: 100%;
+}
+
+body {
+	
+	font-family: Open Sans, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+
+}
+
+table tbody
+{
+font-size: 14px;
+}
+
+tr {
+	margin:0px;
+	padding:0px;
+}
+
+table td a:link {
+font-weight:bold;
+text-decoration:underline !important;
+}
+
+thead th { 
+white-space: nowrap; 
+}
+
+a {
+	color:#333333;
+}
+
+a:link {
+	color:#333333;
+	text-decoration:none;
+}
+
+a:visited {
+	color: #333333;
+	text-decoration:none;
+}
+
+a:hover {
+	color: #999999;
+	text-decoration:underline !important;
+}
+
+a:active {
+	color:#B55C1D;
+	text-decoration:underline;
+}
+
+h1 {
+	font-family: "Open Sans Semi Bold Italic", Arial, Helvetica, sans-serif;
+	font-size:24px;
+	text-align:left;
+	padding: 5px;
+	margin: 0px 0px 5px 0px;
+	color:#666666;
+	border-bottom:solid 1px #CCCCCC;
+	text-transform:uppercase;
+}
+
+h2 {
+	font-family: "Open Sans Semi Bold Italic", Arial, Helvetica, sans-serif;
+	font-size:21px;
+	text-align:left;
+	padding: 5px;
+	margin: 0px 0px 5px 0px;
+	color:#005F29;
+	border-bottom:solid 1px #CCCCCC;
+	text-transform:uppercase;
+}
+
+h3 {
+	font-family: "Open Sans Semi Bold Italic", Arial, Helvetica, sans-serif;
+	font-size:18px;
+	text-align:left;
+	padding: 5px;
+	margin: 0px 0px 5px 0px;
+	color:#D4711A;
+	border-bottom:solid 1px #CCCCCC;
+	text-transform:uppercase;
+}
+
+hr {
+	width:auto;
+color:#009900;
+background-color:#009900;
+}
+
+/* Form styles. */
+
+input,select,textarea {
+font-family: Open Sans, Arial, Helvetica, sans-serif;
+font-size:13px;
+border:solid 1px;
+border-color:#999999;
+margin:0px 5px 0px 0px;
+color:#666666;
+padding:3px;
+-moz-border-radius-bottomleft: 3px;
+-moz-border-radius-bottomright: 3px;
+-moz-border-radius-topleft: 3px;
+-moz-border-radius-topright: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+}
+
+
+input:focus,select:focus,textarea:focus {
+/*background-color:#fee9d8 !important;*/
+}
+
+fieldset {
+display:block !important;
+clear:both;
+width:inherit;
+padding: 10px;
+margin-bottom:20px;
+border:solid 1px #CCCCCC;
+-moz-border-radius-bottomleft: 7px;
+-moz-border-radius-bottomright: 7px;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright: 7px;
+-webkit-border-radius: 7px;
+border-radius: 3px;
+}
+
+fieldset li{
+list-style:circle;
+list-style-position: inside;
+}
+  
+legend {
+font-family: "Open Sans Semi Bold Italic", Arial, Helvetica, sans-serif;
+color:#D4711A;
+font-size:18px;
+text-align:left;
+padding:5px;
+width:auto;
+margin:0px;
+border-bottom:none;
+}
+
+.checkbox
+{
+border:none !important;
+border:0 !important;
+border-color:transparent !important;
+display:inline;
+}
+
+
+
+/* TODO: replace valMessage with bootstrap validation. */
+#valMessage  {
+text-align: center;
+padding: 0px;
+color:#005F29;
+margin:0px;
+}
+
+/* TODO: replace valMessage with bootstrap validation. */
+div[id^="valMessage"]  {
+text-align: center;
+padding: 8px;
+color:#005F29;
+margin:0px;
+}
+
+/* TODO: replace required with bootstrap validation. */
+#required {
+color:#D4711A;
+vertical-align:baseline;
+}
+
+.bold {
+	font-weight:bold;
+}

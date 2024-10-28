@@ -1,0 +1,282 @@
+/* cfdump style override */
+
+.cfdump_cfc {
+	display:none;
+	font-family: Open Sans, Arial, Helvetica, sans-serif !important;
+	font-size: 11px !important;
+}
+
+table.cfdump_struct {
+	font-family: Open Sans, Arial, Helvetica, sans-serif !important;
+	font-size: 12px !important;
+	width:100%;
+	background-color:#FFF !important;
+}
+
+table.cfdump_struct th.struct, td.struct {
+	background-color:#FFF !important;
+	color:inherit;
+	padding:5px !important;
+}
+
+table.cfdump_struct th.struct {
+	border-bottom:solid 1px #666666;
+	font-weight:bold;
+	padding-top:20px !important;
+}
+
+
+/* cfdebug style override */
+.cfdebug {
+	font-family: Open Sans, Arial, Helvetica, sans-serif !important;
+	font-size: 11px !important;
+	
+}
+
+table.cfdebug {		
+	display:block;
+	clear:both;
+	font-family: Open Sans, Arial, Helvetica, sans-serif !important;
+	font-size: 11px !important;
+	padding:2px 5px !important;
+	color:#666666 !important;
+	width:1240px !important;
+	left:0px !important; 
+	right:0px !important;  
+	margin:0 auto !important;
+	border-color:#FFF !important;
+	background-color:#FFF !important;
+	overflow:hidden;
+}
+
+td.cfdebug, code, pre {		
+	font-family: Open Sans, Arial, Helvetica, sans-serif !important;
+	font-size: 11px !important;
+	padding:2px 5px !important;
+	color:#666666 !important;
+	min-width:60px !important;
+	background-color:#FFF !important;
+	text-align:left;
+	white-space: pre-wrap; /* css-3 */
+    white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+    white-space: -pre-wrap; /* Opera 4-6 */
+    white-space: -o-pre-wrap; /* Opera 7 */
+    word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
+.cfdebuglge {
+	font-family: Open Sans, Arial, Helvetica, sans-serif !important;
+	font-size: 14px !important;
+	color:#666666 !important;
+	padding:5px !important;
+}
+
+.template_overage {
+	font-family: Open Sans, Arial, Helvetica, sans-serif !important;
+	font-size: 11px !important;
+	color:#ff00 !important;
+
+}
+
+/* YUI cflayout-tab overide CSS */
+
+.x-tab-strip span.x-tab-strip-text {
+font:Open Sans, Arial, Helvetica, san-serif !important;
+/*overflow:hidden;*/
+white-space: nowrap;
+cursor:pointer;
+text-overflow: ellipsis;
+font-size:13px !important;
+font-weight:normal;
+text-transform:uppercase;
+text-decoration:none;
+}
+
+.x-tab-strip-active a {
+text-decoration:none !important;
+}
+
+.x-tab-strip-over a {
+text-decoration:none !important;
+color:#666666 !important;
+}
+
+#ext-gen8 {
+padding:10px 0px 0px;
+margin-top:10px;
+}
+
+.x-tab-strip-inner {	
+padding:5px 10px; !important;
+font-size:13px !important;
+font-weight:normal !important;
+}
+
+.x-tabs-strip-wrap {	
+padding:5px 0px 1px; !important;
+margin:5px 0px 0px;
+}
+
+.yuimenu {
+	
+	z-index:100;
+	text-transform:uppercase;
+}
+
+.yuimenubaritem .first-of-type {
+	overflow:hidden;
+	background-color:#e4e4e4 !important;
+}
+
+.yuimenuitem a:hover {
+	width:100%;
+}
+
+a.yuimenubaritemlabel {
+	background-color:#e4e4e4 !important;
+}
+
+.yuimenuitemlabel {
+	margin-right:20px;
+	background-color:#e4e4e4 !important;
+}
+
+.yui-calcontainer single withtitle {
+position:relative;
+padding:5px;
+background-color:#FFF;
+border:1px solid #ddd;
+left:100px !important;
+top:-100px !important;
+z-index:1 !important;
+}
+
+.x-panel {
+    height:auto !important;
+    overflow:visible;
+}
+
+.x-border-box .x-tab-bar-top .x-tab-bar-body-default-plain {
+	
+	height:30px !important;
+	padding:0px !important;
+}
+
+.x-border-box .x-tab-default-top {
+	
+	height:30px !important;
+	padding:0px !important;
+}
+
+.x-tab-default-top {
+	padding:0px !important;
+}
+
+.x-tab button {
+	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+	font-size:13px;
+	font-weight:normal;
+	color:#CCCCC;
+	margin:0px;
+	padding:5px 10px;
+	text-transform:uppercase;
+}
+
+.x-tab-bar {
+	display:block;
+	margin:10px 0px !important;
+}
+
+.x-tab-bar-strip {
+	margin:10px 0px !important;
+}
+
+.x-tab-strip-spacer {
+	margin-bottom:20px !important;
+}
+
+/* ColdFusion Ajax CFWINDOW override classes. */
+
+.x-dlg .x-dlg-dlg-body{
+	background:url();
+	background-color:white;
+	border:0px solid #C1CCD0;
+	border-top:0px none;
+	padding:10px;
+	position:absolute;
+	top:24px;left:0;
+	z-index:1;
+	overflow:hidden;
+}
+.x-dlg .x-dlg-hd {
+	background:url();
+	color:#666666;
+    background-color:#666;
+	overflow:hidden;
+	padding:8px;
+	white-space: nowrap;
+}
+.x-dlg .x-dlg-hd-left {
+    background: url() no-repeat 0 -41px;
+    padding-left: 0px;
+    margin: 0;
+}
+.x-dlg .x-dlg-hd-right {
+    background: url() no-repeat right 0;
+    padding-right: 0px;
+}
+
+.x-window-header-text-container {
+	padding:10px !important;
+}
+
+.x-window-header-text {
+	font-size:18px !important;
+	font-family: "Open Sans Semi Bold Italic", Arial, Helvetica, sans-serif !important;
+}
+
+.x-window-body {
+    overflow:hidden;
+	background-color:#FFFFFF !important;
+	padding:5px;
+}
+
+.x-window-mr {
+	background-color:#E0E3BF !important;
+	background-image: none !important;
+}
+
+.x-window-ml {
+	background-color:#E0E3BF !important;
+    background-image: none !important;
+}
+
+.x-window-tc {
+	background-color:#E0E3BF !important;
+	background-image: none !important;
+}
+
+.x-window-tl {
+	background-color:#E0E3BF !important;
+	background-image: none !important;
+}
+
+.x-window-tr {
+	background-color:#E0E3BF !important;
+	background-image: none !important;
+}
+
+.x-window-bc {
+	background-color:#E0E3BF !important;
+	background-image: none !important;
+}
+
+.x-window-bl {
+	background-color:#E0E3BF !important;
+	background-image: none !important;
+}
+
+.x-window-br {
+	background-color:#E0E3BF !important;
+	background-image: none !important;
+}

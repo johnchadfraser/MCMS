@@ -1,0 +1,953 @@
+@import "normalize.min.css";
+@import "custom_bootstrap.min.css";
+@import "main.min.css";
+@import "cf.min.css";
+@import "/MCMS/js/ajax/jquery/tablesorter/themes/custom/style.css";
+@import "custom_datatables.min.css";
+@import "/app/custom/css/custom.min.css";
+
+
+#mcmsBody {
+	/*
+width: 100%;
+margin-left:auto;
+margin-right:auto;
+margin-top:0px;
+margin-bottom:0px;
+padding:0px;
+background-repeat:repeat-x;
+border-spacing:0;
+color:#666666;
+*/
+}
+
+#mcmsMainContainer {
+background-color:#FFFFFF;
+display:block; 
+clear:both;
+width:1240px; 
+left:0px; 
+right:0px;  
+margin:0 auto;
+margin-top:95px;
+margin-bottom:100px;
+padding-top:10px;
+}
+
+.mcmsAuthenticateContainer {
+width: 50%; 
+height: 50%;
+min-width: 225px;
+max-width: 300px;
+background-color: rgba(245, 245, 245, 0.4);
+padding:20px 40px;
+padding-top:20px !important;
+-webkit-border-radius: 10px !important;
+-moz-border-radius: 10px !important;
+border-radius: 10px !important;
+-webkit-border-top: 10px !important;
+-moz-border-top: 10px !important;
+border-top: 10px !important;
+-webkit-border-bottom: 10px !important;
+-moz-border-bottom: 10px !important;
+border-bottom: 10px !important;
+}
+
+.mcmsErrorContainer {
+width: 50%; 
+height: 50%;
+min-width: 225px;
+max-width: 640px;
+background-color: rgba(245, 245, 245, 0.4);
+padding:20px 40px;
+margin-top:5%;
+-webkit-border-radius: 10px !important;
+-moz-border-radius: 10px !important;
+border-radius: 10px !important;
+-webkit-border-top: 10px !important;
+-moz-border-top: 10px !important;
+border-top: 10px !important;
+-webkit-border-bottom: 10px !important;
+-moz-border-bottom: 10px !important;
+border-bottom: 10px !important;
+}
+
+#mcmsMessage {
+text-align: center;
+padding: 8px;
+color: #005F29;
+margin: 0px;
+}
+
+.mcmsFormFieldLabel {
+text-align:right;
+vertical-align:text-top;
+font-weight:bold;
+}
+
+.mcmsResultUpdateLink {
+text-align:left;
+vertical-align:text-top;
+font-weight:bold;
+}
+
+#mcmsHeaderContainer {
+display:block;
+position:fixed;
+top:0px;
+float:left;
+width:100%;
+height:70px;
+background-image:url('/MCMS/assets/header/public_header_02.gif'); background-repeat:repeat-x;
+padding:0px;
+margin:0px;
+z-index:100;
+background-color:#FFF;
+}
+
+#mcmsHeaderContainerContent {
+display:block;
+position:absolute;
+height:70px;
+width:1240px;
+top:0px;
+left:0px; 
+right:0px;  
+margin:0 auto;
+z-index:1000;
+text-align:right;
+vertical-align:bottom;
+padding:5px;
+color:#FFF !important;
+text-transform:uppercase !important;
+font-size:12px !important;
+}
+
+#mcmsHeaderContainerLogo {
+display:block;
+position:absolute;
+top:10px;
+float:left;
+height:70px;
+background-image:url('/MCMS/assets/header/header_logo.png'); background-repeat:no-repeat;
+width:1240px;
+text-transform:uppercase;
+left:0px; 
+right:0px;  
+margin:0 auto;
+z-index:1000;
+}
+
+#mcmsHeaderAdminContainer {
+display:block;
+position:fixed;
+top:0px;
+float:left;
+width:100%;
+height:70px;
+background-image:url('/MCMS/assets/header/admin_header_02.gif'); background-repeat:repeat-x;
+padding:0px;
+margin:0px;
+z-index:100;
+background-color:#FFF;
+}
+
+#mcmsContainer {
+	 display:block;
+	 position:fixed;
+	 top:130px;
+}
+
+.mcmsUpdateRow {
+	 display:block;
+	 position:fixed;
+	 top:130px;
+	 background-color:#FFF;
+	 height:90%;
+	 width:100%;
+}
+
+#mcmsAlert {
+	float:clear;
+	position:inherit;
+	text-align: center !important;
+	padding: 10px;
+	border:solid 1px #CCCCCC;
+	border-radius:15px;
+	background-color:#F0F0F0;
+	margin:8px;
+	color:#990000;
+	text-transform:uppercase;
+}
+
+#mcmsAlertIcon {
+	display:block;
+	width:100%;
+	font-size:36px;
+	padding:5px;
+	
+}
+
+#mcmsAlertTitle {
+	display:block;
+	width:100%;
+	font-size:21px;
+	font-weight:bold;
+	padding:5px;
+}
+
+#mcmsAlertDescription {
+	display:block;
+	width:100%;
+	font-size:16px;
+	padding:5px;
+}
+
+
+#mcmsQueryContainer {
+	 display:block;
+	 position:fixed;
+	 top:210px;
+}
+
+#mcmsTabNavigationTitle {
+	display:block;
+	position:fixed;
+	height:40px;
+	font-size:18px;
+	padding:10px 0px;
+	left:20px;
+	right:10px;
+	z-index:1000;
+	background-color: #FFF;
+	top:110px;
+}
+
+#mcmsTabContainer {
+	display:block;
+	width:auto;	
+	padding:5px;
+	margin-top:10px;
+	margin-bottom:80px;
+	overflow:hidden;
+}
+
+#mcmsResultTask {
+display:block;
+font-size:14px;
+width:auto;
+height:auto;
+float:right;
+text-transform:uppercase;
+}
+
+#mcmsTabNavigationContainer {
+	display:block;
+	position:fixed;
+	left:30px;
+	right:10px;
+	z-index:1000;
+	background-color: #FFF;
+	top:150px;
+}
+
+#mcmsTabNavigationCrudContainer {
+	display:block;
+	position:fixed;
+	left:30px;
+	right:30px;
+	z-index:1001;
+	background-color: #FFF;
+	top:70px;
+}
+
+#mcmsResultContainer {
+	display:block;
+	position:absolute;
+	top:210px;
+	right:0px;	
+}
+
+#mcmsCrudFormNavContainer {
+	display:block;
+	position:absolute;
+	top:70px;
+	left:30px;
+	right:30px;	
+}
+
+.mcmsUpdateLink {
+	color:#FF9933;
+	cursor:pointer;
+}
+
+.mcmsUpdateLink:before{
+  content:"\e065";
+  font-family:"Glyphicons Halflings";
+  margin-right:10px;
+  display:inline-block;
+}
+
+.mcmsUpdateRowShow {
+	color:#FF9933;
+	cursor:pointer;
+}
+
+.mcmsUpdateRowShow:before{
+  content:"\e065";
+  font-family:"Glyphicons Halflings";
+  margin-right:10px;
+  display:inline-block;
+}
+
+.mcmsLoading {
+display:block;
+width:100%;
+float:left;
+clear:both;
+margin:20px;
+}
+
+.mcmsLabelText {
+display:block;
+clear:right;
+font-weight:bold;
+font-size:12px;
+}
+
+.mcmsUserProfileImg {
+	 overflow:hidden;
+     border-radius:50%;
+	 width:100px;
+	 height:100px;
+	 background-image:url("/#application.mcmsRepositoryDir#/image/user/me.jpg");
+	 background-position-y:25%;
+	 background-size: 100px;
+}
+
+.mcmsHeader {
+padding:0px !important;
+margin:0px !important;
+position:fixed;
+top:0px;
+left:0px;
+right:0px;
+z-index:1001;
+}
+
+#mcmsHeaderContent {
+display:block;
+float:right;
+width:350px;
+height:45px;
+color:#FFF;
+font-size:11px;
+text-align:right;
+margin:10px 20px;
+}
+
+#mcmsHeaderLink {
+	color:#FFF !important;
+}
+
+#mcmsHeaderLinkIP {
+	color:#FFF !important;
+}
+
+#mcmsHeaderHelp {
+	color:#FFF;
+}
+
+#mcmsHeaderUsername {
+	color:#FFF;
+}
+
+#mcmsHeaderLogo {
+display:block;
+float:left;
+width:96px;
+height:45px;
+margin:5px 20px;
+background-image:url(../assets/logo/header_logo.png);
+border:none;
+}
+
+#mcmsNavigationMenu {
+display:block;
+position:fixed !important;
+top:70px !important;
+z-index:101 !important;
+width:1240px;
+text-transform:uppercase;
+left:0px; 
+right:0px;  
+margin:0 auto;
+}
+
+.mcmsNavigationContainer {
+padding:0px !important;
+margin:0px !important;
+position:fixed;
+top:60px;
+left:0px;
+right:0px;
+z-index:1001;
+height:30px;
+}
+
+#mcmsNavigationContainer {
+display:block; 
+position:fixed;
+top:0px; 
+z-index:3 !important; 
+width:100%; 
+background-color:#e4e4e4; 
+height:100px;
+border-bottom:solid 1px #333333;
+}
+
+#mcmsMessage {
+display:block;
+width:100%;
+position:fixed;
+top:0px;
+left:0px;
+text-align: center;
+padding: 8px;
+color:#CC0000;
+margin:0px;
+background-color:#FFF;
+}
+
+#mcmsTimeoutCounter {
+display:block;
+float:right;
+padding:0px 5px;
+width:220px;
+font-size:12px !important;
+color:#FFF;
+}
+
+#mcmsTimeoutMessage {
+margin: auto;
+position:relative;
+border: 1px solid #CCCCCC;
+border-radius:10px;
+padding: 8px;
+text-align:center;
+background-color:#EFEFEF;
+width:320px;
+z-index: 9002;
+}
+
+#mcmsBlanket {
+background-color:#EFEFEF;
+opacity: 0.65;
+filter:alpha(opacity=65);
+position:fixed;
+z-index: 9001;
+top:0px;
+bottom:0px;
+left:0px;
+height:100% !important;
+width:100% !important;
+}
+
+#mcmsResultPaging {
+display:block;
+float:left;	
+width:auto;
+height:25px;
+padding:0px 20px;
+}
+
+#mcmsResultPageNavigation {
+display:block;
+float:left;	
+width:auto;
+height:25px;
+}
+
+/* Form button styles. */
+
+#mcmsQuery {
+font-weight: bold;
+color: #FFFFFF;
+background-color:#D4711A;
+cursor: pointer;
+border:0px;
+font-size: 12px;
+margin: 0px;
+padding:5px 30px;
+-moz-border-radius-bottomleft: 7px;
+-moz-border-radius-bottomright: 7px;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright: 7px;
+-webkit-border-radius: 7px;
+border-radius: 5px;
+text-transform: uppercase;
+}
+
+#mcmsQuery:hover {
+background-color:#EF8333 !important;
+}
+
+#mcmsInsert {
+font-weight: bold;
+color: #FFFFFF;
+background-color:#D4711A;
+cursor: pointer;
+border:0px;
+font-size: 14px;
+margin: 0px;
+padding:15px 30px;
+-moz-border-radius-bottomleft: 7px;
+-moz-border-radius-bottomright: 7px;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright: 7px;
+-webkit-border-radius: 7px;
+border-radius: 5px;
+text-transform: uppercase;
+}
+
+#mcmsInsert:hover {
+background-color:#EF8333 !important;
+}
+
+#mcmsUpdate {
+font-weight: bold;
+color: #FFFFFF;
+background-color:#D4711A;
+cursor: pointer;
+border:0px;
+font-size: 14px;
+margin: 0px;
+padding:15px 30px;
+-moz-border-radius-bottomleft: 7px;
+-moz-border-radius-bottomright: 7px;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright: 7px;
+-webkit-border-radius: 7px;
+border-radius: 5px;
+text-transform: uppercase;
+}
+
+#mcmsUpdate:hover {
+background-color:#EF8333 !important;
+}
+
+#mcmsUpdateList {
+font-weight: bold;
+color: #FFFFFF;
+background-color:#D4711A;
+cursor: pointer;
+border:0px;
+font-size: 14px;
+margin: 0px;
+padding:15px 30px;
+-moz-border-radius-bottomleft: 7px;
+-moz-border-radius-bottomright: 7px;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright: 7px;
+-webkit-border-radius: 7px;
+border-radius: 5px;
+text-transform: uppercase;
+}
+
+#mcmsUpdateList:hover {
+background-color:#EF8333 !important;
+}
+
+#mcmsInsertLine {
+font-weight: bold;
+color: #FFFFFF;
+background-color:#6BB885;
+cursor: pointer;
+border:0px;
+font-size: 12px;
+margin: 0px;
+padding:10px 20px;
+-moz-border-radius-bottomleft: 7px;
+-moz-border-radius-bottomright: 7px;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright: 7px;
+-webkit-border-radius: 7px;
+border-radius: 5px;
+text-transform: uppercase;
+}
+
+#mcmsInsertLine:hover {
+background-color:#387F50 !important;
+}
+
+#mcmsReset {
+font-weight: bold;
+color: #FFFFFF;
+background-color:#6BB885;
+cursor: pointer;
+border:0px;
+font-size: 14px;
+margin: 0px;
+padding:15px 30px;
+-moz-border-radius-bottomleft: 7px;
+-moz-border-radius-bottomright: 7px;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright: 7px;
+-webkit-border-radius: 7px;
+border-radius: 5px;
+text-transform: uppercase;
+}
+
+#mcmsReset:hover {
+background-color:#387F50 !important;
+}
+
+
+#mcmsDelete {
+font-weight: bold;
+color: #FFFFFF;
+background-color:#6BB885;
+cursor: pointer;
+border:0px;
+font-size: 14px;
+margin: 0px;
+padding:10px 20px;
+-moz-border-radius-bottomleft: 7px;
+-moz-border-radius-bottomright: 7px;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright: 7px;
+-webkit-border-radius: 7px;
+border-radius: 5px;
+text-transform: uppercase;
+}
+
+#mcmsDelete:hover {
+background-color:#387F50 !important;
+}
+
+
+#mcmsPrevious {
+font-weight: bold;
+color: #FFFFFF;
+background-color:#6BB885;
+cursor: pointer;
+border:0px;
+font-size: 14px;
+margin: 0px;
+padding:10px 20px;
+-moz-border-radius-bottomleft: 7px;
+-moz-border-radius-bottomright: 7px;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright: 7px;
+-webkit-border-radius: 7px;
+border-radius: 5px;
+text-transform: uppercase;
+}
+
+#mcmsPrevious:hover {
+background-color:#387F50 !important;
+}
+
+#mcmsNext {
+font-weight: bold;
+color: #FFFFFF;
+background-color:#6BB885;
+cursor: pointer;
+border:0px;
+font-size: 14px;
+margin: 0px;
+padding:10px 20px;
+-moz-border-radius-bottomleft: 7px;
+-moz-border-radius-bottomright: 7px;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright: 7px;
+-webkit-border-radius: 7px;
+border-radius: 5px;
+text-transform: uppercase;
+}
+
+#mcmsNext:hover {
+background-color:#387F50 !important;
+}
+
+#mcmsSignIn {
+font-weight: bold;
+color: #FFFFFF;
+background-color:#D4711A;
+cursor: pointer;
+border:0px;
+font-size: 12px;
+margin: 0px;
+padding:10px 20px;
+-moz-border-radius-bottomleft: 7px;
+-moz-border-radius-bottomright: 7px;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright: 7px;
+-webkit-border-radius: 7px;
+border-radius: 5px;
+text-transform: uppercase;
+}
+
+#mcmsSignIn:hover {
+background-color:#EF8333 !important;
+}
+
+#mcmsCrudInsertLink {
+font-weight: bold;
+color: #FFFFFF;
+background-color:#387F50;
+cursor: pointer;
+border:0px;
+font-size:13px;
+margin-right: 5px;
+padding:10px 20px;
+-moz-border-radius-bottomleft: 7px;
+-moz-border-radius-bottomright: 7px;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright: 7px;
+-webkit-border-radius: 7px;
+border-radius: 5px;
+text-transform:uppercase;
+text-decoration:none !important;
+}
+
+#mcmsCrudInsertLink:hover {
+background-color:#6BB885 !important;
+}
+
+#mcmsCrudResultLink {
+font-weight: bold;
+color: #FFFFFF;
+background-color:#666666;
+cursor: pointer;
+border:0px;
+font-size:13px;
+margin-right: 10px;
+padding:10px 20px;
+-moz-border-radius-bottomleft: 7px;
+-moz-border-radius-bottomright: 7px;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright: 7px;
+-webkit-border-radius: 7px;
+border-radius: 5px;
+text-transform:uppercase;
+text-decoration:none !important;
+}
+
+#mcmsSend {
+font-weight: bold;
+color: #FFFFFF;
+background-color:#D4711A;
+cursor: pointer;
+border:0px;
+font-size: 14px;
+margin: 0px;
+padding:15px 30px;
+-moz-border-radius-bottomleft: 7px;
+-moz-border-radius-bottomright: 7px;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright: 7px;
+-webkit-border-radius: 7px;
+border-radius: 5px;
+text-transform: uppercase;
+}
+
+#mcmsSave {
+font-weight: bold;
+color: #FFFFFF;
+background-color:#005F29;
+cursor: pointer;
+border:0px;
+font-size: 14px;
+margin: 0px;
+padding:15px 30px;
+-moz-border-radius-bottomleft: 7px;
+-moz-border-radius-bottomright: 7px;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright: 7px;
+-webkit-border-radius: 7px;
+border-radius: 5px;
+text-transform: uppercase;
+}
+
+#mcmsPreview {
+font-weight: bold;
+color: #FFFFFF;
+background-color:#D4711A;
+cursor: pointer;
+border:0px;
+font-size: 14px;
+margin: 0px;
+padding:15px 30px;
+-moz-border-radius-bottomleft: 7px;
+-moz-border-radius-bottomright: 7px;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright: 7px;
+-webkit-border-radius: 7px;
+border-radius: 5px;
+text-transform: uppercase;
+}
+
+#mcmsPreview:hover {
+background-color:#EF8333 !important;
+}
+
+#mcmsRetrieve {
+font-weight: bold;
+color: #FFFFFF;
+background-color:#D4711A;
+cursor: pointer;
+border:0px;
+font-size: 14px;
+margin: 0px;
+padding:15px 30px;
+-moz-border-radius-bottomleft: 7px;
+-moz-border-radius-bottomright: 7px;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright: 7px;
+-webkit-border-radius: 7px;
+border-radius: 5px;
+text-transform: uppercase;
+}
+
+#mcmsRetrieve:hover {
+background-color:#EF8333 !important;
+}
+
+#mcmsCrudResultLink:hover {
+background-color:#999999 !important;
+}
+
+#mcmsUpdateResultMessage {
+	display:block;
+	position:absolute;
+	left:30%;
+	right:30%;
+	z-index:1002;
+	top:30%;
+	text-align:center;
+}
+
+#mcmsUpdateRowMessage {
+	display:block;
+	position:absolute;
+	left:30%;
+	right:30%;
+	z-index:1002;
+	top:30%;
+	text-align:center;
+}
+
+.mcmsAuthenticateBg {
+background-image:url(/MCMS/assets/bg/bg_authenticate.png);
+background-size:cover;
+}
+
+.mcmsLogo {
+height:75px;
+width:155px;
+margin:0px auto;
+}
+
+#mcmsMenu {
+display:block;
+float:clear;
+text-align:right;
+padding:0px;
+margin:0px;
+color:#FFF;
+}
+
+#mcmsApplicationIconLink {
+	display:block;
+	float:left;
+	width:150px;
+	height:60px;
+	text-align:center;
+	padding:10px;
+	margin:15px 15px;
+	text-transform:uppercase;
+	border:solid 1px #fff;
+}
+
+#mcmsApplicationIconLink:hover {
+	
+	border:solid 1px #ebebeb;
+}
+
+#mcmsFormFooter {
+background-color:#FFF;
+height:25px;
+padding:0px;
+border-spacing:0px;
+margin:0px;
+}
+
+#mcmsFooter {
+display:block;
+float:left;
+position:fixed;
+bottom:0px;
+clear:both;
+padding:3px;
+color:#666666;
+width:100%;
+max-height:65px;
+background-color:#FFFFFF;
+font-size:11px !important;
+border-top:solid 1px #999999;
+}
+
+#mcmsFooterContainerContent {
+display:block;
+width:1240px;
+left:0px; 
+right:0px;  
+margin:0 auto;
+}
+
+#mcmsFooterLeftContainer {
+display:block;
+float:left;
+padding:5px;
+width:auto;
+font-size:11px !important;
+}
+
+#mcmsFooterRightContainer {
+display:block;
+float:right;
+padding:5px;
+width:auto;
+font-size:11px !important;
+}
+
+#mcmsFooterLink {
+display:block;
+font-size:11px;
+padding:5px;
+float:left;
+}
+
+/* Replace datatable update button with icon. */
+a.mcmsUpdateResultBtn {
+	content:url(/MCMS/assets/icon/update.png) !important;
+	padding:0px 5px !important;
+}
+
+a.mcmsUpdateResultBtn:hover {
+	content:url(/MCMS/assets/icon/update_hover.png) !important;
+	padding:0px 5px !important;
+}
+
+/* Replace datatable create button with icon. */
+a.mcmsCreateBtn {
+	content:url(/MCMS/assets/icon/create.png) !important;
+	padding:0px 5px !important;
+}
+
+a.mcmsCreateBtn:hover {
+	content:url(/MCMS/assets/icon/create_hover.png) !important;
+	padding:0px 5px !important;
+}
+

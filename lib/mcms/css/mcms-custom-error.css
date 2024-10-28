@@ -1,0 +1,87 @@
+/* Overrides bootstrap. */
+
+  @font-face {
+    font-family: 'Open Sans';
+    src: url(/MCMS/assets/fonts/OpenSans-Regular.woff);
+  }
+
+  @font-face {
+    font-family: 'Open Sans Semi Bold';
+    src: url(/MCMS/assets/fonts/OpenSans-Semibold.woff);
+  }
+
+  @font-face {
+    font-family: 'Open Sans Semi Bold Italic';
+    src: url(/MCMS/assets/fonts/OpenSans-SemiboldItalic.woff);
+  }
+
+  @font-face {
+    font-family: 'Open Sans Bold';
+    src: url(/MCMS/assets/fonts/OpenSans-Bold.woff);
+  }
+
+  @font-face {
+    font-family: 'Open Sans Bold Italic';
+    src: url(/MCMS/assets/fonts/OpenSans-BoldItalic.woff);
+  }
+
+  @font-face {
+    font-family: 'Oswald';
+    src: url(/MCMS/assets/fonts/Oswald-Regular.woff2);
+  }
+
+  @font-face {
+    font-family: 'Oswald Bold';
+    src: url(/MCMS/assets/fonts/Oswald-Bold.woff2);
+  }
+
+  @font-face {
+    font-family: 'Oswald Semibold';
+    src: url(/MCMS/assets/fonts/Oswald-Semibold.woff2);
+  }
+
+  body {
+
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 40px;
+
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+
+    font-family: 'Oswald Bold', sans-serif;
+    text-transform: uppercase;
+	  color:#387f50;
+
+  }
+
+  a:link {
+
+    color: #387f50;
+    
+  }
+
+  a:visited {
+
+    color: #387f50;
+      
+  }
+
+  a:hover {
+
+    text-decoration: underline;
+
+  }
+
+
+  a:active {
+    text-decoration: underline;
+  }
+
+  .error-template {
+
+    padding: 40px 10px;
+    text-align: center;
+
+  }
+  
